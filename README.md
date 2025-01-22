@@ -1,11 +1,13 @@
 # 🦄 OGD Auto AI Analyzer
 **Almost automatically analyze the quality of a DCAT metadata catalog. With a little help from ✨ AI...**
 
+![GitHub License](https://img.shields.io/github/license/machinelearningzh/ogd_ai-analyzer)
 [![PyPI - Python](https://img.shields.io/badge/python-v3.9+-blue.svg)](https://github.com/machinelearningZH/ogd_ai-analyzer)
 [![GitHub Stars](https://img.shields.io/github/stars/machinelearningZH/ogd_ai-analyzer.svg)](https://github.com/machinelearningZH/ogd_ai-analyzer/stargazers)
 [![GitHub Issues](https://img.shields.io/github/issues/machinelearningZH/ogd_ai-analyzer.svg)](https://github.com/machinelearningZH/ogd_ai-analyzer/issues)
 [![GitHub Issues](https://img.shields.io/github/issues-pr/machinelearningZH/ogd_ai-analyzer.svg)](https://img.shields.io/github/issues-pr/machinelearningZH/ogd_ai-analyzer) 
 [![Current Version](https://img.shields.io/badge/version-0.1-green.svg)](https://github.com/machinelearningZH/ogd_ai-analyzer)
+<a href="https://github.com/astral-sh/ruff"><img alt="linting - Ruff" class="off-glb" loading="lazy" src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json"></a>
 
 <details>
 <summary>Contents</summary>
@@ -81,6 +83,14 @@ With the second notebook you get an **in depth analysis of each datasets title a
 - how the data quality is («Datenqualität»), 
 - what the spacial aggregation is («Räumlicher Bezug»), 
 - and how the data can be linked to other data («Verknüpfungsmöglichkeiten»). 
+
+You also get a score for each dataset from 1 (least informative) to 5 (most informative). The scoring is as follows:
+
+- 1 point - No information about this criterion.
+- 2 points - Few information, much is missing.
+- 3 points - Average information, some information is available, some is missing.
+- 4 points - Good information, most information is available.
+- 5 points - Excellent information, everything is very clear, complete, and detailed.
 
 ## Background: Why check metadata?
 Metadata is essential for data users. Only with an understanding of context, methodology, content, and quality can they fully utilize the data. Creating good metadata requires time and effort. Unfortunately, not all metadata meets sufficient quality standards. We observe issues both in our catalog and others, such as [opendata.swiss](https://opendata.swiss/de).
